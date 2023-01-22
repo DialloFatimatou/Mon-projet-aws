@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExerciceAWS</title>
+   <style>
+       .cont{
+    max-width: 388px;
+    margin: auto;
+    margin-top: 100px;
+    
+    font-weight: bold;
+}
+h2{
+    color: black;
+    text-transform: capitalize;
+
+}
+   </style>
+</head>
+<body>
+    <header><a href="index.html">Enregistrer un participant</a></header>
+    <div align="center">
+        <h2 >La liste des participants</h2>
+        <br><br>
+              <input type="text" id="text"placeholder="Veillez entrez le nom du participant . . .">
+         <div id="ListCont">
+
+         </div>    
+    </div>
+    <div align="center" style="margin-top: 20px;">
+          <table id="tableau" cellpadding="10" border="2">
+ 
+</table>
+    </div>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="./firebaseConfig.js"></script>
+<script src="./getDocs.js"></script>
+</body>
+</html>
